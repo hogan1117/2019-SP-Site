@@ -13,7 +13,7 @@ jQuery(function($) {'use strict',
 		if($portfolio_selectors!='undefined'){
 			$portfolio = $('.portfolio-items');
 			$portfolio.isotope({
-				itemSelector : '.col-sm-2',
+				itemSelector : '.col-pic-8',
 				layoutMode : 'fitRows'
 			});
 			

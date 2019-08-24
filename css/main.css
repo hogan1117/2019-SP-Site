@@ -931,7 +931,9 @@ h1, h2, h3, h4, h5, h6 {
 	color:#fff;  
 }
 
-
+.col-pic-8 {
+	width:12%;
+}
 
 /*====================
 ======Clients CSS=====
