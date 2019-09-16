@@ -289,6 +289,16 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: #fc7700;
 }
 
+.sp-title{
+	padding-left:10px;
+	color:#000;
+	font-size: xx-large;
+	font-weight: bold;
+}
+
+.sp-title:hover{
+	color:#999;
+}
 
 /*======================
 ====Main Slider CSS=====
