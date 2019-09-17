@@ -25,6 +25,24 @@ jQuery(function($) {'use strict',
 				return false;
 			});
 		}
+
+		//customer
+		$portfolio_selectors_customers = $('.portfolio-filter-customers >li>a');
+		if($portfolio_selectors_customers!='undefined'){
+			$portfolio = $('.portfolio-items-customers');
+			$portfolio.isotope({
+				itemSelector : '.col-pic-12',
+				layoutMode : 'fitRows'
+			});
+			
+			$portfolio_selectors_customers.on('click', function(){
+				$portfolio_selectors_customers.removeClass('active');
+				$(this).addClass('active');
+				var selector = $(this).attr('data-filter');
+				$portfolio.isotope({ filter: selector });
+				return false;
+			});
+		}
 	});
 	
 	//Pretty Photo
