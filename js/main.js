@@ -29,8 +29,8 @@ jQuery(function($) {'use strict',
 		//customer
 		$portfolio_selectors_customers = $('.portfolio-filter-customers >li>a');
 		if($portfolio_selectors_customers!='undefined'){
-			$portfolio = $('.portfolio-items-customers');
-			$portfolio.isotope({
+			$portfolio_customers = $('.portfolio-items-customers');
+			$portfolio_customers.isotope({
 				itemSelector : '.col-pic-12',
 				layoutMode : 'fitRows'
 			});
@@ -39,7 +39,7 @@ jQuery(function($) {'use strict',
 				$portfolio_selectors_customers.removeClass('active');
 				$(this).addClass('active');
 				var selector = $(this).attr('data-filter');
-				$portfolio.isotope({ filter: selector });
+				$portfolio_customers.isotope({ filter: selector });
 				return false;
 			});
 		}
